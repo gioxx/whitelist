@@ -32,7 +32,7 @@ case "$1" in
 		echo -e " ${TICK} \e[32m Removing duplicates... \e[0m"
 		mv /etc/pihole/whitelist.txt /etc/pihole/whitelist.txt.old && cat /etc/pihole/whitelist.txt.old | sort | uniq >> /etc/pihole/whitelist.txt
 		wait
-		echo -e " [...] \e[32m Pi-hole gravity rebuilding lists...This may take a while \e[0m"
+		echo -e " [...] \e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
 		pihole -g > /dev/null
 		wait
 		echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
@@ -46,7 +46,7 @@ case "$1" in
 		echo -e " ${TICK} \e[32m Removing duplicates... \e[0m"
 		mv /etc/pihole/whitelist.txt /etc/pihole/whitelist.txt.old && cat /etc/pihole/whitelist.txt.old | sort | uniq >> /etc/pihole/whitelist.txt
 		wait
-		echo -e " [...] \e[32m Pi-hole gravity rebuilding lists...This may take a while \e[0m"
+		echo -e " [...] \e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
 		pihole -g > /dev/null
 		wait
 		echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
