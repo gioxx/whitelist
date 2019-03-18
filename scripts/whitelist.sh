@@ -40,7 +40,7 @@ case "$1" in
 		;;
 	stats)
 		echo "Download and add statistics sites to whitelist ..."
-		curl -sS https://raw.githubusercontent.com/gioxx/whitelist/master/domains/stats.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
+		curl -sS https://raw.githubusercontent.com/gioxx/ph-whitelist/master/domains/stats.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 		echo -e " ${TICK} \e[32m Adding to whitelist... \e[0m"
 		sleep 0.5
 		echo -e " ${TICK} \e[32m Removing duplicates... \e[0m"
