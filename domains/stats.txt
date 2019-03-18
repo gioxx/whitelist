@@ -1,0 +1,10 @@
+browser.pipe.aria.microsoft.com
+collector.githubapp.com
+log.zoom.us
+pixel.wp.com
+referrer.disqus.com
+settings-win.data.microsoft.com
+ssl.google-analytics.com
+static.addtoany.com
+stats.wp.com
+www.google-analytics.com
