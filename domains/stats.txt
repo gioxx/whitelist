@@ -1,10 +1,9 @@
-(.*).events.data.microsoft.com
-browser.pipe.aria.microsoft.com
+(.*).data.microsoft.com
+(.*).aria.microsoft.com
 collector.githubapp.com
 log.zoom.us
 pixel.wp.com
 referrer.disqus.com
-settings-win.data.microsoft.com
 ssl.google-analytics.com
 static.addtoany.com
 stats.wp.com
