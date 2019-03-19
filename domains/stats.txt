@@ -1,3 +1,4 @@
+(.*).events.data.microsoft.com
 browser.pipe.aria.microsoft.com
 collector.githubapp.com
 log.zoom.us
