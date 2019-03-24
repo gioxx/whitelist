@@ -1,7 +1,11 @@
-(.*).data.microsoft.com
-(.*).aria.microsoft.com
+# Whitelist Integrations: Statistics specific list
+# https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27
+# GSolone 2019 - https://gioxx.org
+
+# Stats
 collector.githubapp.com
 log.zoom.us
+mobile.pipe.aria.microsoft.com
 pixel.wp.com
 referrer.disqus.com
 ssl.google-analytics.com
