@@ -74,8 +74,17 @@ case "$1" in
 			echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
 			echo -e " ${TICK} \e[32m Done! \e[0m"
 			;;
+	clear)
+			echo "Clean whitelist ..."
+			: > /etc/pihole/whitelist.txt
+			echo -e " [...] \e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
+			pihole -g > /dev/null
+			wait
+			echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
+			echo -e " ${TICK} \e[32m Done! \e[0m"
+			;;
 	*)
-		echo "Usage: whitelist safe|referral|stats"
+		echo "Usage: whitelist safe|referral|stats|facebook|clear"
 		exit 1
 		;;
 esac
