@@ -1,7 +1,8 @@
 #!/bin/bash
-# Whitelist Updater for Pi-hole (http://pi-hole.net/)
+# Whitelist Updater for Pi-hole (https://pi-hole.net/)
 # Based on the original script created by Anudeep (Slight change by cminion) - https://github.com/anudeepND/whitelist
-# GSolone 2019 - https://gioxx.org
+# GSolone - 2019
+# Home: https://pihole.noads.it | Blog: https://gioxx.org
 #================================================================================
 
 TICK="[\e[32m ✔ \e[0m]"
