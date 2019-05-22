@@ -1,0 +1,6 @@
+# Hello World: Demo list
+# GSolone - 2019
+# Home: https://pihole.noads.it | Blog: https://gioxx.org
+
+# Demo
+https://pihole.noads.it
