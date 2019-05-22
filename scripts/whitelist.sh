@@ -89,6 +89,12 @@ case "$1" in
 		echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
 		echo -e " ${TICK} \e[32m Done! \e[0m"
 		;;
+	upgrade)
+		echo "Upgrade shell script ..."
+		wget -N https://raw.githubusercontent.com/gioxx/ph-whitelist/master/scripts/whitelist.sh
+		chmod +x whitelist.sh
+		echo -e " ${TICK} \e[32m Done! \e[0m"
+		;;
 	clear)
 		echo "Clean whitelist ..."
 		: > /etc/pihole/whitelist.txt
@@ -99,7 +105,14 @@ case "$1" in
 		echo -e " ${TICK} \e[32m Done! \e[0m"
 		;;
 	*)
-		echo "Usage: whitelist safe|referral|stats|facebook|clear"
+		echo
+		echo "- How to use ph-whitelist -"
+		echo "  https://pihole.noads.it/#download"
+		echo "  Download and apply whitelists: sudo ./whitelist.sh safe|referral|stats|facebook"
+		echo "  Tools: sudo ./whitelist.sh demo (add a demo whitelist for debug)"
+		echo "       : sudo ./whitelist.sh clear (delete Pi-hole's whitelist content)"
+		echo "       : sudo ./whitelist.sh upgrade (download latest whitelist.sh from GitHub)"
+		echo
 		exit 1
 		;;
 esac
