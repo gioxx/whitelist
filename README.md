@@ -1,4 +1,4 @@
-# ph-whitelist ([pihole.noads.it]())
+# ph-whitelist ([pihole.noads.it](https://pihole.noads.it))
 
 ![](https://pihole.noads.it/images/pihole-llc_phwhitelist_test.jpg)
 
