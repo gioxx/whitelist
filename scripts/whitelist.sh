@@ -91,7 +91,7 @@ case "$1" in
 		;;
 	upgrade)
 		echo "Upgrade shell script ..."
-		wget -N https://raw.githubusercontent.com/gioxx/ph-whitelist/master/scripts/whitelist.sh
+		wget -N https://pihole.noads.it/whitelist.sh
 		chmod +x whitelist.sh
 		echo -e " ${TICK} \e[32m Done! \e[0m"
 		;;
