@@ -1,7 +1,10 @@
 # Whitelist Integrations
-# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27
+# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
 # GSolone - 2019
 # Home: https://pihole.noads.it | Blog: https://gioxx.org
+
+# Amazon
+aax-eu.amazon-adsystem.com
 
 # Apple ID
 appleid.apple.com
@@ -13,6 +16,12 @@ www.appleiphonecell.com
 # Apple Music
 itunes.apple.com
 s.mzstatic.com
+
+# CNN
+cdn.cnn.com
+cnn.com
+data.cnn.com
+www.cnn.com
 
 # Dropbox
 # https://www.reddit.com/r/pihole/comments/6fer0z/for_anyone_who_cant_seem_to_download_dropbox_files/
@@ -27,11 +36,15 @@ widget-cdn.rpxnow.com
 # Gmail (iOS)
 googleapis.l.google.com
 
+# GoDaddy Image Repository (WebMail)
+imagesak.secureserver.net
+
 # Google Chrome
 dl.google.com
 
 # Google Maps and other Google services
 android.clients.google.com
+app-measurement.com
 clients2.google.com
 clients3.google.com
 clients4.google.com
@@ -163,6 +176,9 @@ cdn-gl.imrworldwide.com
 countess.twitch.tv
 pubsub-edge.twitch.tv
 s.amazon-adsystem.com
+
+# Twitter
+cdn.syndication.twimg.com
 
 # WordPress
 gravatar.com
