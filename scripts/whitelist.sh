@@ -126,13 +126,13 @@ case "$1" in
 	*)
 		echo
 		echo -e "
-        ${COL_LIGHT_GREEN}.;;,.
+        ${COL_LIGHT_GREEN} .;;,.
         .ccccc:,.
          :cccclll:.      ..,,
           :ccccclll.   ;ooodc
            'ccll:;ll .oooodc
              .;cll.;;looo:.
-                 ${COL_LIGHT_RED}.. ','.
+                 ${COL_LIGHT_RED} .. ','.
                 .',,,,,,'.
               .',,,,,,,,,,.
             .',,,,,,,,,,,,....
