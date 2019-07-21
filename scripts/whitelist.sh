@@ -152,7 +152,7 @@ case "$1" in
 		echo "  Download and apply whitelists: sudo ./whitelist.sh safe|referral|stats|facebook"
 		echo
 		echo "  Tools: sudo ./whitelist.sh trusted (add only trusted lists: safe|referral|stats)"
-		echo "  		 : sudo ./whitelist.sh demo (add a demo whitelist for debug)"
+		echo "       : sudo ./whitelist.sh demo (add a demo whitelist for debug)"
 		echo "       : sudo ./whitelist.sh clear (delete Pi-hole's whitelist content)"
 		echo "       : sudo ./whitelist.sh upgrade (download latest whitelist.sh from GitHub)"
 		echo
