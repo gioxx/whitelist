@@ -7,12 +7,11 @@ Inserisco qui di seguito le blacklist che utilizzo sulla mia installazione di Pi
 - https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 - https://mirror1.malwaredomains.com/files/justdomains
 - https://www.squidblacklist.org/downloads/dg-malicious.acl
-- https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 - http://theantisocialengineer.com/AntiSocial_Blacklist_Community_V1.txt
 - https://phishing.army/download/phishing_army_blocklist_extended.txt
 
 -----------
 
-*ultimo aggiornamento: 7/4/19*
+*ultimo aggiornamento: 23/8/19*
 
 Visita https://pihole.noads.it
