@@ -170,6 +170,9 @@ www.plex.tv
 apresolve.spotify.com
 spclient.wg.spotify.com
 
+# Streaming (Generic)
+vcrypt.net
+
 # Twitch Client
 c.amazon-adsystem.com
 cdn-gl.imrworldwide.com
