@@ -50,6 +50,7 @@ clients3.google.com
 clients4.google.com
 connectivitycheck.android.com
 connectivitycheck.gstatic.com
+forms.gle
 ssl.google-analytics.com
 www.google-analytics.com
 
