@@ -5,6 +5,7 @@
 
 # Amazon
 aax-eu.amazon-adsystem.com
+unagi-na.amazon.com
 
 # Apple ID
 appleid.apple.com
@@ -57,6 +58,9 @@ www.google-analytics.com
 # https://www.reddit.com/r/pihole/comments/6r79k6/google_play_store_been_blocked/
 android.clients.google.com
 appspot-preview.l.google.com
+
+# Mediaset Infinity TV
+socialize.eu1.gigya.com
 
 # Microsoft Bing (Maps)
 dev.virtualearth.net
