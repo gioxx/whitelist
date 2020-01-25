@@ -187,6 +187,7 @@ s.amazon-adsystem.com
 
 # Twitter
 addtoany.com
+static.addtoany.com
 analytics.twitter.com
 cdn.syndication.twimg.com
 
