@@ -1,0 +1,16 @@
+# (BETA) Whitelist for NextDNS
+# GSolone - 2020
+# Home: https://pihole.noads.it | Blog: https://gioxx.org
+
+# Google
+analytics.google.com
+phishingquiz.withgoogle.com
+
+# Social Networks
+addtoany.com
+
+# Suggested by users
+nxmac.com
+
+#WordPress
+yoast.com
