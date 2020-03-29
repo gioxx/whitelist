@@ -6,12 +6,11 @@ https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking.tx
 https://www.squidblacklist.org/downloads/dg-ads.acl  
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt  
 https://mirror1.malwaredomains.com/files/justdomains  
-https://www.squidblacklist.org/downloads/dg-malicious.acl  
 http://theantisocialengineer.com/AntiSocial_Blacklist_Community_V1.txt  
 https://phishing.army/download/phishing_army_blocklist_extended.txt
 
 -----------
 
-*ultimo aggiornamento: 23/8/19*
+*ultimo aggiornamento: 29/3/20*
 
 Visita https://pihole.noads.it
