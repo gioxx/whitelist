@@ -18,6 +18,7 @@ socialize.eu1.gigya.com
 # Suggested by users
 betanews.com
 comeprima.net
+guce.advertising.com
 nxmac.com
 
 #WordPress
