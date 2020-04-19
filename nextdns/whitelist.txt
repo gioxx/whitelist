@@ -1,12 +1,16 @@
 # (BETA) Whitelist for NextDNS
-# GSolone - 2020
+# GSolone - since 2020
 # Home: https://pihole.noads.it/nextdns | Blog: https://gioxx.org
 
-# Google
+# Google Maps and other Google services
 analytics.google.com
+phishingquiz.withgoogle.com
+ssl.google-analytics.com
+www.google-analytics.com
+
+# Google Play
 android.clients.google.com
 appspot-preview.l.google.com
-phishingquiz.withgoogle.com
 
 # Social Networks
 addtoany.com
@@ -20,6 +24,7 @@ betanews.com
 comeprima.net
 guce.advertising.com
 nxmac.com
+spesa-casa.com
 
 #WordPress
 yoast.com

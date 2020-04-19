@@ -1,6 +1,6 @@
 # Whitelist Integrations
 # Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
-# GSolone - 2019
+# GSolone - since 2019
 # Home: https://pihole.noads.it | Blog: https://gioxx.org
 
 # Amazon
@@ -44,7 +44,7 @@ imagesak.secureserver.net
 dl.google.com
 
 # Google Maps and other Google services
-android.clients.google.com
+analytics.google.com
 app-measurement.com
 clients2.google.com
 clients3.google.com
@@ -52,6 +52,7 @@ clients4.google.com
 connectivitycheck.android.com
 connectivitycheck.gstatic.com
 forms.gle
+phishingquiz.withgoogle.com
 ssl.google-analytics.com
 www.google-analytics.com
 
@@ -170,6 +171,10 @@ tvdb2.plex.tv
 tvthemes.plexapp.com
 tvthemes.plexapp.com.cdn.cloudflare.net
 www.plex.tv
+
+# Social Networks
+addtoany.com
+analytics.twitter.com
 
 # Spotify
 apresolve.spotify.com
