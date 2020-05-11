@@ -1,49 +1,32 @@
-# Whitelist Integrations
-# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
-# GSolone - since 2019
-# Home: https://pihole.noads.it | Blog: https://gioxx.org
-
-# Amazon
 aax-eu.amazon-adsystem.com
 unagi-na.amazon.com
 
-# Apple ID
 appleid.apple.com
 captive.apple.com
 gsp1.apple.com
 www.apple.com
 www.appleiphonecell.com
 
-# Apple Music
 itunes.apple.com
 s.mzstatic.com
 
-# CNN
 cdn.cnn.com
 cnn.com
 data.cnn.com
 www.cnn.com
 
-# Dropbox
-# https://www.reddit.com/r/pihole/comments/6fer0z/for_anyone_who_cant_seem_to_download_dropbox_files/
 dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
 
-# Fox News
-# https://discourse.pi-hole.net/t/cant-watch-fox-news-live/1563/3?u=jacob.salmela
 widget-cdn.rpxnow.com
 
-# Gmail (iOS)
 googleapis.l.google.com
 
-# GoDaddy Image Repository (WebMail)
 imagesak.secureserver.net
 
-# Google Chrome
 dl.google.com
 
-# Google Maps and other Google services
 analytics.google.com
 app-measurement.com
 clients2.google.com
@@ -56,25 +39,16 @@ phishingquiz.withgoogle.com
 ssl.google-analytics.com
 www.google-analytics.com
 
-# Google Play
-# https://www.reddit.com/r/pihole/comments/6r79k6/google_play_store_been_blocked/
 android.clients.google.com
 appspot-preview.l.google.com
 
-# Mediaset Infinity TV
 socialize.eu1.gigya.com
 
-# Microsoft Bing (Maps)
 dev.virtualearth.net
 ecn.dev.virtualearth.net
 t0.ssl.ak.dynamic.tiles.virtualearth.net
 t0.ssl.ak.tiles.virtualearth.net
 
-# Microsoft Widows, Office & Services
-# https://www.reddit.com/r/pihole/comments/5eq4on/problems_with_microsoft_office/
-# https://docs.microsoft.com/en-us/windows/privacy/manage-windows-endpoints
-# https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus
-# https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1803-non-enterprise-editions
 c.s-microsoft.com
 displaycatalog.mp.microsoft.com
 dl.delivery.mp.microsoft.com
@@ -95,8 +69,6 @@ wdcp.microsoft.com
 wdcpalt.microsoft.com
 www.msftncsi.com
 
-# Microsoft Skype
-# https://github.com/pi-hole/pi-hole/issues/380#issuecomment-195977839
 apps.skype.com
 client-s.gateway.messenger.live.com
 m.hotmail.com
@@ -106,10 +78,6 @@ s{1..5}.symcb.com
 sa.symcb.com
 ui.skype.com
 
-# Microsoft Xbox Network (Live)
-# https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/29
-# https://www.reddit.com/r/xboxone/comments/5khrrl/achievements_not_unlocking/
-# https://www.reddit.com/r/xboxone/comments/5l7bm1/tech_piholeother_dns_users_additional_whitelist/
 attestation.xboxlive.com
 cert.mgt.xboxlive.com
 client-s.gateway.messenger.live.com
@@ -136,13 +104,10 @@ xflight.xboxlive.com
 xkms.xboxlive.com
 xsts.auth.xboxlive.com
 
-# NVIDIA GeForce Experience (and GTA from Rockstar)
-# https://www.reddit.com/r/pihole/comments/7n0es7/geforce_experience_features_blocked/
 events.gfe.nvidia.com
 gfwsl.geforce.com
 prod.telemetry.ros.rockstargames.com
 
-# Plex Domains
 106c06cd218b007d-b1e8a1331f68446599e96a4b46a050f5.ams.plex.services
 app.plex.tv
 cpms.spop10.ams.plex.bz
@@ -172,33 +137,26 @@ tvthemes.plexapp.com
 tvthemes.plexapp.com.cdn.cloudflare.net
 www.plex.tv
 
-# Social Networks
 addtoany.com
 analytics.twitter.com
 
-# Spotify
 apresolve.spotify.com
 spclient.wg.spotify.com
 
-# Streaming (Generic)
 vcrypt.net
 
-# Twitch Client
 c.amazon-adsystem.com
 cdn-gl.imrworldwide.com
 countess.twitch.tv
 pubsub-edge.twitch.tv
 s.amazon-adsystem.com
 
-# Twitter
 addtoany.com
 static.addtoany.com
 analytics.twitter.com
 cdn.syndication.twimg.com
 
-# WordPress
 gravatar.com
 
-# YouTube history
 s.youtube.com
 video-stats.l.google.com

@@ -1,9 +1,3 @@
-# Whitelist Integrations: Statistics specific list
-# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27
-# GSolone - 2019
-# Home: https://pihole.noads.it | Blog: https://gioxx.org
-
-# Stats
 collector.githubapp.com
 log.zoom.us
 mobile.pipe.aria.microsoft.com

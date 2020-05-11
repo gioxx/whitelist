@@ -1,9 +1,3 @@
-# Whitelist Integrations: Facebook specific list
-# Source: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
-# GSolone - 2019
-# Home: https://pihole.noads.it | Blog: https://gioxx.org
-
-# Facebook (& Services)
 api.facebook.com
 b-api.facebook.com
 b-graph.facebook.com
