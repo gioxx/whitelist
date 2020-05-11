@@ -120,7 +120,7 @@ case "$1" in
 		echo "Clean whitelist ..."
 		: > "${PIHOLE_LOCATION}"/whitelist.txt
 		echo -e " [...] \e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
-		${GRAVITY_UPDATE_COMMAND} $(cat /etc/pihole/whitelist.txt | xargs) > /dev/null
+		pihole -g > /dev/null
 		wait
 		echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
 		echo -e " ${TICK} \e[32m Done! \e[0m"
@@ -140,7 +140,7 @@ case "$1" in
             .',,,,,,,,,,,,....
           ....''',,,,,,,'.......
         .........  ....  .........
-        ..........      .......... ph-whitelist for Pi-hole 5.0
+        ..........      .......... ph-whitelist for Pi-hole 5.0 (20200511-02)
         ..........      ..........  GSolone - 2020
         .........  ....  .........   https://pihole.noads.it
           ........,,,,,,,'......
