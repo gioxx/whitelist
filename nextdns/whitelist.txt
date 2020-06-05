@@ -12,6 +12,9 @@ www.google-analytics.com
 android.clients.google.com
 appspot-preview.l.google.com
 
+# Microsoft related
+xboxlive.com
+
 # Social Networks
 addtoany.com
 analytics.twitter.com
