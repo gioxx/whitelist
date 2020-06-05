@@ -78,6 +78,7 @@ s{1..5}.symcb.com
 sa.symcb.com
 ui.skype.com
 
+assets1.xboxlive.com
 attestation.xboxlive.com
 cert.mgt.xboxlive.com
 client-s.gateway.messenger.live.com
