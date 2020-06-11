@@ -34,6 +34,7 @@ clients3.google.com
 clients4.google.com
 connectivitycheck.android.com
 connectivitycheck.gstatic.com
+fonts.gstatic.com
 forms.gle
 phishingquiz.withgoogle.com
 ssl.google-analytics.com
