@@ -2,6 +2,9 @@
 # GSolone - since 2020
 # Home: https://pihole.noads.it/nextdns | Blog: https://gioxx.org
 
+#Altervista
+forum.it.altervista.org
+
 # Google Maps and other Google services
 analytics.google.com
 phishingquiz.withgoogle.com
