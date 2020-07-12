@@ -11,6 +11,6 @@ https://phishing.army/download/phishing_army_blocklist_extended.txt
 
 -----------
 
-*ultimo aggiornamento: 29/3/20*
+*ultimo aggiornamento: 12/7/20*
 
 Visita https://pihole.noads.it
