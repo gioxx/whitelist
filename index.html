@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NoAds.it - ph-whitelist</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel='shortcut icon' href='images/raspberry-pi.ico' type='image/x-icon' />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/raspberry-pi.png" alt="Raspberry Pi" /></span>
+					<h1 id="logo"><a href="https://gioxx.github.io/ph-whitelist">ph-whitelist</a></h1>
+					<p>Non di sole blacklist &egrave; fatto Pi-hole!</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#home" class="active">Di cosa si tratta</a></li>
+						<li><a href="#caratteristiche">Caratteristiche</a></li>
+						<li><a href="#download">Download e utilizzo</a></li>
+						<li><a href="#startengine">Articoli pubblicati</a></li>
+						<li><a href="#info">Informazioni e Supporto</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://twitter.com/gioxx" class="fab fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com/gioxx.org" class="fab fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/gioxx/ph-whitelist" class="fab fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://paypal.me/gioxx" class="fab fa-paypal"><span class="label">PayPal</span></a></li>
+						<li><a href="https://tag.satispay.com/gioxx" class="fas fa-hand-holding-usd"><span class="label">SatisPay</span></a></li>
+						<li><a href="https://www.buymeacoffee.com/gioxx" class="fas fa-coffee"><span class="label">Buy Me a Coffee</span></a></li>
+						<li><a href="https://www.patreon.com/gioxx" class="fab fa-patreon"><span class="label">Patreon</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Home -->
+							<section id="home">
+								<div class="image main" data-position="center">
+									<img src="images/pihole-llc_phwhitelist_test.jpg" alt="ph-whitelist" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Di cosa si tratta</h2>
+										<p>Una serie di whitelist da poter immediatamente utilizzare<br />
+										all'interno della propria installazione di Pi-hole</a>.</p>
+									</header>
+									<p>Partendo dall'<a href="https://github.com/anudeepND/whitelist" target="_blank" />ottimo lavoro di anudeepND</a> ho voluto realizzare <strong>ph-whitelist</strong>, un fork che in un solo script racchiude la possibilit&agrave; di modificare dinamicamente la whitelist utilizzata da <a href="https://pi-hole.net/" target="_blank" />Pi-hole</a>. Lo script permette infatti di aggiungere rapidamente siti web <a href="https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27" target="_blank" />dichiarati leciti dal forum ufficiale della comunit&agrave;</a>, sbloccare l'uso di Social Network (che spesso vedono finire loro domini in blacklist comunemente utilizzate), integrare siti web che mancano all'appello delle liste di anudeepND, file che sono comunque alla base del funzionamento di ph-whitelist.</p>
+								</div>
+							</section>
+
+						<!-- Caratteristiche -->
+							<section id="caratteristiche">
+								<div class="container">
+									<h3>Caratteristiche</h3>
+									<ul class="feature-icons">
+										<li class="fa-github"><strong>Codice sempre sotto controllo</strong>: ph-whitelist &egrave; su GitHub, chiunque pu&ograve; rilasciare un fix, un aggiornamento, una nuova versione. Se vuoi contribuire, sei il benvenuto (o la benvenuta :-)).</li>
+										<li class="fa-file-code"><strong>Liste sempre aggiornate</strong>: il lavoro svolto da anudeepND &egrave; egregio. ph-whitelist utilizza la sua whitelist costantemente aggiornata e permette di integrarla con domini da lui non utilizzati.</li>
+										<li class="fa-angellist"><strong>Adatte a ogni sistema</strong>: non importa dove tu stia facendo girare Pi-hole, le whitelist sono compatibili con ogni sistema (s&igrave;, potresti utilizzarle anche con prodotti di terze parti che nulla c'entrano con Pi-hole).</li>
+										<li class="fa-raspberry-pi"><strong>Pronto per RPi</strong>: ph-whitelist &egrave; stato scritto e testato su Raspbian per Raspberry Pi 3B+.</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Download -->
+							<section id="download">
+								<div class="container">
+									<h3>Download e Utilizzo</h3>
+									<p>
+										Lo script &egrave; utilizzabile da riga di comando. Puoi eseguirlo manualmente richiedendo il tipo di lista da scaricare e integrare nella tua whitelist (te le propongo qua di seguito), pensa lui a tutto. Ho incluso inoltre un'opzione che ti permette di cancellare completamente l'attuale whitelist in uso sulla tua installazione di Pi-hole.
+										<br /><br />
+										Per scaricare lo script sul tuo RPi, lancia da terminale un semplice wget dello stesso, poi rendilo eseguibile:
+										<pre><code>wget -N https://raw.githubusercontent.com/gioxx/ph-whitelist/master/scripts/whitelist.sh<br />chmod +x whitelist.sh</code></pre>
+									</p>
+									<section>
+										<h4 id="whitelist">Whitelist disponibili</h4>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Nome</th>
+														<th>Scopo</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>safe</td>
+														<td>La whitelist di Anudeep (<a href="https://github.com/anudeepND/whitelist/blob/master/domains/whitelist.txt" />github.com/anudeepND/whitelist/blob/master/domains/whitelist.txt	</a>). Integro poi tutti i domini riportati nella discussione <a href="https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27" />discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27</a>, costantemente monitorati e aggiornati (<a href="https://go.gioxx.org/ph-whitelist-integrations" />go.gioxx.org/ph-whitelist-integrations</a>).</td>
+													</tr>
+													<tr>
+														<td>referral</td>
+														<td>Alcuni siti web potrebbero non funzionare se questi domini non si trovano in whitelist (<a href="https://github.com/anudeepND/whitelist/blob/master/domains/referral-sites.txt" />github.com/anudeepND/whitelist/blob/master/domains/referral-sites.txt</a>). Per questo motivo &egrave; sempre possibile chiedere a ph-whitelist di integrarli in Pi-hole. La lista &egrave; curata da anudeepND.</td>
+													</tr>
+													<tr>
+														<td>stats</td>
+														<td>In parte suggeriti dalla comunit&agrave;, in parte da me integrati dopo aver verificato alcuni piccoli malfunzionamenti nel quotidiano utilizzo di browser e applicativi di terze parti. Si tratta di domini che possono tracciare statistiche d'uso da parte dell'utente, ma non sono nocivi per la sicurezza della propria navigazione (<a href="https://go.gioxx.org/ph-whitelist-stats" />go.gioxx.org/ph-whitelist-stats</a>).</td>
+													</tr>
+													<tr>
+														<td>facebook</td>
+														<td>Sblocca qualsiasi dominio legato a Facebook, gli indirizzi sono stati suggeriti e verificati dalla comunit&agrave; di Pi-hole (<a href="https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27" />discourse.pi-hole.net/t/commonly-whitelisted-domains/212/27</a>), li ho consapevolmente scorporati dalla lista safe e dalla mia integrazione poich&eacute; non a tutti fa comodo o piacere sbloccare i domini legati al colosso di Zuckerberg (<a href="https://go.gioxx.org/ph-whitelist-fb" />go.gioxx.org/ph-whitelist-fb</a>).</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<h4 id="utilizzo">Utilizzo dello script</h4>
+										<pre><code>sudo ./whitelist safe|referral|stats|facebook</code></pre>
+										Esempio basato sulla lista <code>safe</code>:
+										<pre><code>sudo ./whitelist safe<br />pi@raspbiantest:~ $ sudo ./whitelist.sh safe
+Download and add safe sites to whitelist (official: anudeepND) ...
+ [ ✔ ]  Adding to whitelist...
+ [ ✔ ]  Removing duplicates...
+Download and add safe sites to whitelist (integration: gioxx) ...
+ [ ✔ ]  Adding to whitelist...
+ [ ✔ ]  Removing duplicates...
+ [...]  Pi-hole gravity rebuilding lists. This may take a while...
+ [ ✔ ]  Pi-hole's gravity updated
+ [ ✔ ]  Done!
+pi@raspbiantest:~ $</code></pre>
+
+									<h4 id="trusted">Pacchetto liste fidato (trusted)</h4>
+									&Egrave; possibile aggiungere in un solo colpo le liste safe, referral e stats utilizzando <code>whitelist.sh</code> con parametro <code>trusted</code>, questo lascia fuori la whitelist dedicata a Facebook:
+									<pre><code>sudo ./whitelist trusted</code></pre>
+
+									<h4 id="clear">Pulizia completa (clear)</h4>
+									&Egrave; possibile eliminare tutti i domini inclusi nella propria whitelist utilizzando <code>whitelist.sh</code> con parametro <code>clear</code>:
+									<pre><code>sudo ./whitelist clear</code></pre>
+
+									<h4 id="upgrade">Aggiornamento dello script (upgrade)</h4>
+									&Egrave; possibile scaricare e sovrascrivere la propria copia di <code>whitelist.sh</code> con l'ultima disponibile su GitHub utilizzando il parametro <code>upgrade</code>:
+									<pre><code>sudo ./whitelist upgrade</code></pre>
+
+									<h4 id="crontab">Operazione pianificata (Crontab)</h4>
+									&Egrave; certamente possibile (e consigliato) inserire delle schedulazioni all'interno del Crontab di root per permettere a Pi-hole di ottenere una whitelist sempre aggiornata.<br /><br />
+									Esempio (ogni lun-mer-ven nell'intervallo orario dalle 04:05 alle 04:09 del mattino):
+									<pre><code>pi@raspbiantest:~ $ sudo crontab -l
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+5 4 * * 1,3,5 /home/pi/whitelist.sh safe
+7 4 * * 1,3,5 /home/pi/whitelist.sh referral
+9 4 * * 1,3,5 /home/pi/whitelist.sh stats</code></pre>
+
+									<strong>Attenzione</strong>: l'esempio tiene conto del fatto che lo script sia stato scaricato (e che venga quindi eseguito) dalla home dell'utente <code>pi</code>. Se cos&igrave; non fosse sar&agrave; necessario modificare le regole di Crontab (e mettere a posto la posizione dello script <code>whitelist.sh</code>) affinch&eacute; abbiano effetto.
+
+									<br /><br />
+
+									<h4 id="demo">Debug di funzionamento (demo)</h4>
+									&Egrave; possibile verificare che le regole di Crontab funzionino correttamente aggiungendo il download di una lista dimostrativa contenente un unico dominio (questo che stai navigando ora, gioxx.github.io/ph-whitelist). Prevedi quindi l'utilizzo di <code>whitelist.sh</code> con parametro <code>demo</code>:
+									<pre><code>sudo ./whitelist demo</code></pre>
+									All'ora da te stabilita controlla che il dominio compaia nella whitelist utilizzata dal tuo Pi-hole.
+
+									</section>
+
+								</div>
+							</section>
+
+							<!-- Articoli pubblicati -->
+								<section id="startengine">
+									<div class="container">
+										<h3>Articoli pubblicati</h3>
+										<p>Ti lascio qui di seguito i riferimenti necessari per lavorare con Pi-hole e ph-whitelist.</p>
+										<div class="features">
+											<article>
+												<a href="https://gioxx.org/2019/04/10/pi-hole-setup/" class="image"><img src="images/Screenshot_2019-06-23_ph-whitelist_Gestisci–dinamicamente-la-Whitelist-di-Pi-hole.png" alt="ph-whitelist: Gestisci dinamicamente la Whitelist di Pi-hole" /></a>
+												<div class="inner">
+													<h4>ph-whitelist: Gestisci dinamicamente la Whitelist di Pi-hole</h4>
+													<p>Ho pubblicato un articolo dedicato a ph-whitelist all'interno del quale ti spiego il perch&eacute; del progetto e quello che devi sapere per utilizzare lo script.</p>
+												</div>
+											</article>
+											<article>
+												<a href="https://gioxx.org/2019/04/10/pi-hole-setup/" class="image"><img src="images/Screenshot_2019-05-13_Pi-hole_installazione_e_prima_configurazione.png" alt="Pi-hole: installazione e prima configurazione" /></a>
+												<div class="inner">
+													<h4>Pi-hole: installazione e prima configurazione</h4>
+													<p>Tutto (o quasi) quello che devi sapere sull'installazione di Pi-hole sul tuo Raspberry Pi. Configurazione, utilizzo, liste di blocco e non solo.</p>
+												</div>
+											</article>
+											<article>
+												<a href="https://gioxx.org/2019/03/25/raspberry-pi/" class="image"><img src="images/Screenshot_2019-04-07_Raspberry_Pi_la_base_di_partenza.png" alt="RPi: base di partenza" /></a>
+												<div class="inner">
+													<h4>Raspberry Pi: la base di partenza</h4>
+													<p>Sei completamente a digiuno di nozioni riguardanti Raspberry Pi e le possibilit&agrave; che questo piccolo computer pu&ograve; offrirti? Dai un'occhiata a questo mio articolo introduttivo.</p>
+												</div>
+											</article>
+										</div>
+									</div>
+								</section>
+
+							<!-- Informazioni e Supporto -->
+								<section id="info">
+									<div class="container">
+										<h3>Licenza d'uso, distribuzione e supporto</h3>
+										<p>
+											Il progetto &egrave; auto-finanziato e mantenuto da Giovanni F. '<em>Gioxx</em>' Solone. Tutte le informazioni riguardanti progetto sono disponibili nel <a href="https://github.com/gioxx/ph-whitelist" />repository GitHub</a> e nel <a href="https://gioxx.org/tag/ph-whitelist/" />mio blog</a>.
+										</p>
+
+										<p>
+											Dove non diversamente specificato, il contenuto di questo sito web viene rilasciato con licenza Creative Commons, versione 4.0 by-nc-sa internazionale, descritta punto per punto a questo indirizzo: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" />creativecommons.org/licenses/by-nc-sa/4.0/deed.it</a> (oppure in inglese: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" />creativecommons.org/licenses/by-nc-sa/4.0/deed.en</a>).
+										</p>
+
+										<p>
+											Lo script &egrave; invece soggetto a licenza originale MIT di Anudeep:
+											<blockquote>
+												MIT License<br />
+												Copyright (c) 2018 Anudeep ND anudeep@protonmail.com<br />
+												Permission is hereby granted, free of charge, to any person obtaining a copy
+												of this software and associated documentation files (the "Software"), to deal
+												in the Software without restriction, including without limitation the rights
+												to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+												copies of the Software, and to permit persons to whom the Software is
+												furnished to do so, subject to the following conditions:<br /><br />
+												The above copyright notice and this permission notice shall be included in all
+												copies or substantial portions of the Software.<br /><br />
+												THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+												IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+												FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+												AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+												LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+												OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+												SOFTWARE
+											</blockquote>
+										</p>
+
+										<p>
+											ph-whitelist <strong>&egrave; e rimarr&agrave; gratuito</strong>, ma se ti va puoi offrirmi un caff&egrave;, o magari diventare sostenitore! :-)
+											<ul style="padding-left: 4.5em;">
+												<li>Dona ora <i class="fab fa-paypal"></i> <a href="https://paypal.me/gioxx">con PayPal</a> o <i class="fas fa-hand-holding-usd"></i> <a href="https://tag.satispay.com/gioxx" />con SatisPay</a></li>
+												<li><i class="fas fa-coffee"></i> <a href="https://www.buymeacoffee.com/gioxx">Offri un caff&egrave; con Buy Me A Coffee</a></li>
+												<li><i class="fab fa-patreon"></i> <a href="https://www.patreon.com/gioxx" />Sostieni il progetto con Patreon</a></li>
+											</ul>
+											
+											<a href="https://www.buymeacoffee.com/gioxx"><img src="https://img.buymeacoffee.com/button-api/?text=Offrimi un caff&egrave;!&emoji=?&slug=gioxx&button_colour=d30000&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
+											
+										</p>
+
+									</div>
+								</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>
+									<img src="https://gioxx.org/wp-content/uploads/2020/04/g3964-1000px-150x150.png" alt="gfsCom" style="float: left; max-width: 20px; padding-right: 4px;"> <em>I write my life one article at a time</em> - 2019-2023
+		        			<br /><br /><strong>Realizzazione</strong>: <a href="https://gfsolone.com">gfsCom</a> (<em>basato su <a href="http://html5up.net">Read Only di HTML5 UP</a></em>)<br />
+		        				<strong>Versione del sito</strong>: 0.12 by @<a href="https://gioxx.org">Gioxx</a><br />
+		        				<strong>Ult.mod.</strong>: 5/11/23<br />
+		                <strong>Modules</strong>: <a href="https://fontawesome.com/" target="_blank" />fontawesome</a>, BMAC, GH Pages
+								</li>
+								<li>
+									<img src="https://xfiles.noads.it/img/milan-skyline.png" style="max-width: 100px;" /><br />
+									<strong>&#8220;</strong><em>Made with &#9825; in Italy (<a href="http://it.wikipedia.org/wiki/Milano" />Milan</a>)<br >
+									Raspbian (RPi 3 B+), Git, <br />
+									Notepad++ (Windows), VSCode<br />
+									 and a lot of patience.</em><strong>&#8221;</strong>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
