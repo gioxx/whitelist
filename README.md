@@ -1,4 +1,6 @@
 # ph-whitelist ([pihole.noads.it](https://pihole.noads.it))
+**The project is now archived. I no longer use Pi-hole on a regular basis and therefore cannot continue to study and support what has been done for this wonderful product.  
+I am leaving the repository public in any case, it is right to do so and someone could always draw "inspiration" from it 😄**
 
 ![](https://pihole.noads.it/images/pihole-llc_phwhitelist_test.jpg)
 
